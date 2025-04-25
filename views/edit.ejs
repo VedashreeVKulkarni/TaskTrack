@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+</head>
+<body class="bg-gray-800">
+    <div class="container mx-auto p-10">
+        <div class="main w-full min-h-screen bg-gray-500 p-10 text-gray">
+           <a class=" text-blue-800 inline-block mb-10" href="/">Go to home</a>
+           <form action="/edit" method="post">
+            <input class="block w-1/4 rounded-lg px-5 py-2 bg-gray-100 mb-3" type="text" name="previous" placeholder="Previous title" value="<%= filename %>">
+            <input class="block w-1/4 rounded-lg px-5 py-2 bg-gray-100 mb-3" type="text" name="new" placeholder="New title" >
+        
+            <input class="block rounded-md px-5 mt-3 py-2 bg-red-600 text-white cursor-pointer hover:bg-blue-700 transition" type="submit" value="Update Name">
+        </form>
+    </div>
+        
+        
+           
+    
+    <script src="/public/javascripts/script.js"></script>
+</body>
+</html>
